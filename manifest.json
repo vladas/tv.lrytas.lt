@@ -1,0 +1,11 @@
+{
+  "name": "tv.lrytas.lt HTML5 player",
+  "version": "1.0",
+  "description": "This extension replaces Flash player with an HTML5 player",
+  "content_scripts": [
+    {
+      "matches": ["http://tv.lrytas.lt/?id=*"],
+      "js": ["jquery-1.7.1.min.js", "html5player.js"]
+    }
+  ]
+}
