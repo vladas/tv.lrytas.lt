@@ -12,17 +12,6 @@
             }
             $(function() {
                 $("#html5video").attr('src', getURLParameter('src'));
-                $("#fullscreen-btn").css('background-image', "url(" + chrome.extension.getURL('fullscreen.png') + ")");
-                console.log(chrome.extension.getURL('fullscreen.png'));
-                $('#html5video, #fullscreen-btn').hover(function(){
-                    $('#fullscreen-btn').show();
-                }, function(){
-                    $('#fullscreen-btn').hide();
-                });
-                
-                $("#fullscreen-btn").click(function(){
-                    $('#html5video').get(0).webkitEnterFullscreen();
-                });
             });
         </script>
         <style type="text/css">
