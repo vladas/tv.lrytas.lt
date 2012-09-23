@@ -4,7 +4,7 @@ $(function(){
     var matches = flashvars.match(pattern);
     $('#video_win object').remove();
     
-    $('#video_win').prepend("<video id=\"html5video\" controls  preload=\"auto\" width=\"679\" height=\"400\" src=\"\"></video>");
+    $('#video_win').prepend("<video id=\"html5video\" controls  preload=\"auto\" width=\"679\" height=\"400\" src=\"\" autoplay=\"autoplay\"></video>");
     $('#html5video').attr("src", matches[0]);
     
     $('#video_win').prepend(el);
